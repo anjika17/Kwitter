@@ -27,6 +27,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       //Start code
 console.log("room name"+ Room_names);
 row = "<div class='room_name' id=" +  Room_names +" onclick='redirectToRoomName(this.id)'>#"+ Room_names +"</div><hr>" ;
+document.getElementById("output").innerHTML = row ;
       //End code
       });
 });
